@@ -21,8 +21,8 @@
             border-radius: 50%;
             cursor: pointer;
             user-select: none;
-            top: 75px; 
-            left: 75px; 
+            top: 75px;
+            left: 75px;
         }
         #sliders {
             text-align: center;
@@ -30,6 +30,9 @@
         #sliders input {
             display: block;
             margin: 10px auto;
+        }
+        #reset {
+            text-align: center;
         }
     </style>
 </head>
@@ -45,7 +48,9 @@
         <label for="head-vertical-slider">Head Vertical</label>
         <input type="range" id="head-vertical-slider" min="-2" max="2" value="0">
     </div>
+    <div id="reset">
+        <button id="action-button">Reset</button>
+    </div>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
-        
